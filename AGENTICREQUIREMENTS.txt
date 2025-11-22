@@ -1,0 +1,18 @@
+1. There should be some uses of Agentic AI patterns (See AWS Perspective Guidance
+uploaded to Canvas for Agentic AI Patterns and Workflows). The guidelines
+provided in AWS perspective Guidance are general. The patterns can be
+implemented using any agentic framework.
+2. The agentic patterns that must be used at least once in your assignment 3 effort
+includes the following four patterns:
+a. Tool-based agents for calling function (e.g., a simple calculator). Not code
+executer. You may simply define your own tool of a simple function doing
+simple thing like calculating the sum of two numbers and add it to your
+agent.
+b. Coding agents (e.g., Code Executer),
+c. Multi-agent Collaboration
+d. Observer and monitoring agent (e.g., rephrasing the output of another agent).
+A reflector agent is also a kind of observer/monitoring agent that provides
+feedback on the output of some agents. Please see the AWS Perspective
+Guidance uploaded to Canvas for Agentic AI Patterns and Workflows, page
+51: Workflow for evaluators and reflect-refine loops. This type of agentic
+workflow is also called “reflection”.

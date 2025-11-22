@@ -145,6 +145,3 @@ def generate_seq_diagram(uc_specs_path: Path, output_dir: Path) -> None:
         output_path = output_dir / filename
         output_path.write_text(puml_code, encoding="utf-8")
         print(f"[OK] Saved sequence diagram for: {name} -> {output_path}")
-        
-
-    

@@ -33,5 +33,6 @@ def get_llm_config() -> Dict[str, Any]:
         "config_list": get_config_list(),
         "temperature": 0.2,
         "timeout": 120,
+        "max_tokens": 4096,
     }
 
