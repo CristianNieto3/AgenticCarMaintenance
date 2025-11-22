@@ -5,7 +5,7 @@ from autogen.agentchat import ConversableAgent
 from config.llm_config import get_llm_config
 
 def generate_use_case_specs(uc_diagram_path: Path, output_path: Path) -> None:
-    """Reads the system summary and asks an LLM agent to generate a UML-style use case diagram description"""
+    """Reads the system summary and asks an LLM agent to generate the use case specifications"""
 
     diagram_text = uc_diagram_path.read_text(encoding="utf-8")
     llm_config = get_llm_config()
