@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-work in progress :)
+
 =======
 # Agentic Car Maintenance Tracking System
 
@@ -220,13 +219,13 @@ Demonstrates evaluate → feedback → refine pattern (one iteration).
 
 This project fulfills all requirements:
 
-✅ **Tool-based agents** - Date calculation functions  
-✅ **Coding agents** - Generates and executes Python code  
-✅ **Multi-agent collaboration** - Architect → Coder → Tester pipeline  
-✅ **Observer/reflection** - Reviewer provides feedback, Coder refines  
-✅ **Runnable application** - CLI with all 5 use cases integrated  
-✅ **Automated tests** - 14 tests covering all functionality  
-✅ **Complete documentation** - READMEs, code comments, diagrams  
+ **Tool-based agents** - Date calculation functions  
+ **Coding agents** - Generates and executes Python code  
+ **Multi-agent collaboration** - Architect → Coder → Tester pipeline  
+ **Observer/reflection** - Reviewer provides feedback, Coder refines  
+ **Runnable application** - CLI with all 5 use cases integrated  
+ **Automated tests** - 14 tests covering all functionality  
+ **Complete documentation** - READMEs, code comments, diagrams  
 
 ## Troubleshooting
 
@@ -250,4 +249,4 @@ GitHub: [@CristianNieto3](https://github.com/CristianNieto3)
 ## License
 
 Educational project for coursework.
->>>>>>> e7e23b8 (Completed agentic car maintenance system with 4 agentic SWE patterns)
+
