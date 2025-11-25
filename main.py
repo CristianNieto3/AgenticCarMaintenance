@@ -3,6 +3,7 @@ from agents.uc_diagram_agent import generate_use_case_diagram
 from agents.uc_specs_agent import generate_use_case_specs
 from agents.seq_diagram_agent import generate_seq_diagram
 from agents.class_diagram_agent import generate_class_diagram
+from agents.code_gen_agent import generate_code_from_sequences
 
 BASE_DIR = Path(__file__).parent
 
@@ -11,6 +12,7 @@ GENERATED_DIR = BASE_DIR / "generated"
 DIAGRAMS_DIR = GENERATED_DIR / "diagrams"
 SPECS_DIR = GENERATED_DIR / "specs"
 SEQ_DIR = DIAGRAMS_DIR / "sequence"
+CODE_DIR = GENERATED_DIR / "code"
 
 CLASS_DIAGRAM_FILE = DIAGRAMS_DIR / "class_diagram.puml"
 
@@ -18,7 +20,7 @@ CLASS_DIAGRAM_FILE = DIAGRAMS_DIR / "class_diagram.puml"
 DIAGRAMS_DIR.mkdir(parents=True, exist_ok=True)
 SPECS_DIR.mkdir(parents=True, exist_ok=True)
 SEQ_DIR.mkdir(parents=True, exist_ok=True)
-
+CODE_DIR.mkdir(parents=True, exist_ok=True)
 
 
 
@@ -39,6 +41,14 @@ def main():
     generate_seq_diagram(uc_specs_file, SEQ_DIR)
 
     generate_class_diagram(uc_specs_file, CLASS_DIAGRAM_FILE)
+
+    # Generate executable Python code from sequence diagrams
+    # Demonstrates all 4 agentic patterns:
+    # 1) Tool-based agents (date calculation functions)
+    # 2) Coding agents (generates and executes Python code)
+    # 3) Multi-agent collaboration (Architect -> Coder -> Tester)
+    # 4) Observer/reflection (Reviewer agent provides feedback, Coder refines)
+    generate_code_from_sequences(SEQ_DIR, CODE_DIR)
 
 if __name__ == "__main__":
     main()

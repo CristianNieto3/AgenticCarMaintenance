@@ -120,13 +120,15 @@ ehthumbs.db
 *.swp
 *.swo
 
-# Generated project artifacts that can be large
-generated/
-screenshots/
-summary/
+# Generated project artifacts (keep structure, ignore large files)
+screenshots/*.png
+screenshots/*.jpg
 
-# Local LLM / config secrets (adjust if you want to track specific configs)
-# If your `config/llm_config.py` contains secrets, add it here instead of ignoring whole config/.
+# Runtime database files
+maintenance_db.json
+test_maintenance_db.json
+
+# Local LLM / config secrets
 *.key
 *.pem
 *.secret

@@ -1,0 +1,9 @@
+ @startuml
+left to right direction
+actor User
+User --> (Register Vehicle)
+User --> (Log Maintenance Event)
+User --> (Edit/Delete Maintenance Record)
+User --> (View Maintenance History)
+User --> (Get Service Recommendation)
+@enduml

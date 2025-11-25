@@ -1,0 +1,11 @@
+@startuml
+actor User
+participant VehicleRegistry
+participant MaintenanceService
+participant MaintenanceDB
+participant RecommendationEngine
+User -> VehicleRegistry: Register Vehicle (payload)
+VehicleRegistry -> MaintenanceDB: Create Vehicle Record
+MaintenanceDB --> VehicleRegistry: Ack
+VehicleRegistry --> User: Registration Complete
+@enduml

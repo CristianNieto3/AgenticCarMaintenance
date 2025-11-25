@@ -1,0 +1,36 @@
+@startuml
+class User {
+  +String name
+  +String email
+  +String userId
+}
+
+class Vehicle {
+  +String make
+  +String model
+  +int year
+  +String vin
+  +User user
+}
+
+class MaintenanceRecord {
+  +Date date
+  +String servicePerformed
+  +String partsReplaced
+  +Vehicle vehicle
+}
+
+class RecommendationService {
+  +analyze(Vehicle) : List<Recommendation>
+}
+
+class MaintenanceDB {
+  +store(MaintenanceRecord)
+  +List<MaintenanceRecord> getRecordsForVehicle(Vehicle)
+}
+
+User "1" -- "*" Vehicle
+Vehicle "1" *-- "*" MaintenanceRecord
+RecommendationService ..> Vehicle : analyzes
+MaintenanceDB ..> MaintenanceRecord : stores
+@enduml

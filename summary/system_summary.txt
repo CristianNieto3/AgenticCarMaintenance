@@ -1,0 +1,19 @@
+This project is a Car Maintenance Tracker that helps car owners log and monitor service history for their vehicles.
+
+Users can register one or more vehicles and record maintenance events such as oil changes, tire rotations, and brake service.
+
+Each maintenance record stores date, mileage, service type, cost, and optional notes.
+
+The system allows users to view a complete maintenance history for each vehicle.
+
+The application can suggest upcoming services based on mileage or time since the last service.
+
+An LLM-powered assistant helps interpret user requests (e.g., “log an oil change for my Challenger at 72,000 miles”).
+
+The system supports editing and deleting existing maintenance records when corrections are needed.
+
+Users can quickly see overdue or upcoming services through simple console or web-based interactions.
+
+The back-end logic and UML artifacts (use case diagram, class diagram, sequence diagrams) are generated using agentic AI.
+
+The final application demonstrates how LLM agents can assist in software design and code generation for a realistic, everyday use case.

@@ -1,0 +1,11 @@
+@startuml
+actor User
+participant VehicleRegistry
+participant MaintenanceService
+participant MaintenanceDB
+participant RecommendationEngine
+User -> MaintenanceService: Edit/Delete Maintenance Record (recordId, action)
+MaintenanceService -> MaintenanceDB: Update/Delete Record
+MaintenanceDB --> MaintenanceService: Ack/Result
+MaintenanceService --> User: Edit/Delete Result
+@enduml
