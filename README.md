@@ -1,5 +1,3 @@
-
-=======
 # Agentic Car Maintenance Tracking System
 
 An AI-powered system that automatically generates software artifacts (UML diagrams, specifications, and executable code) from a high-level system summary using multi-agent collaboration patterns.
